@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Devinette</title>
+    <script src="./script/scriptDevinette.js"></script>
+    <link rel="stylesheet" href="./css/devinette.css">
+</head>
+
+<body>
+    <div class="fondEcran">
+        <script>var nombreCache=getRandomInt(100);</script>
+        <h3>Devinette</h3>
+        <H1>Trouvez le bon nombre</H1>
+        <hr width="95%">
+    
+    
+        <br><br>   
+           
+            <p id="text">Vous devez trouver un nombre entre 1 et 100.
+             Vous n'avez que <input id="nbEssai" value="9"> essais.</p>
+             <br><br>
+            <p id="text2">Entrez votre nombre </p>
+            <span id="choix"><b> Votre choix: </b><input type="number" maxlength="2" id="nombre"></span>
+             <br><br>
+             <button id="bEssayer" onclick="verifier()"> Essayer </button>
+            <button id="bRejouer" onclick="Rejouer()"> Rejouer </button>
+            <strong id="message"></strong>  
+     </div>
+    
+</body>
+
+</html>
